@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/registrarAccidente.css">      
+    </head>
+    <body>
+        <div id="mapa" class="capas">
+           
+        </div>
+        <div id="datos" class="capas">
+            <div id="form">
+                <fieldset disabled>
+                <form enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <table>
+                        {{form.as_table}}
+                        {{form2.as_table}}
+                    </table>
+                </form>
+            </fieldset>
+            <a href="{% url 'listaDeAccidentes' %}"><button>Regresar</button></a>
+            </div>
+        </div>  
+            
+            <div id="data"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/static/js/mapaDetalles.js "></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBsWMz4YiUjnc-WKTIWdMx7rmexq2I76E8"></script>
+        <script src="/static/js/select.js" > </script>
+    </body>
+</html>

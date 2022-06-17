@@ -1,0 +1,17 @@
+
+
+.capas {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    vertical-align: top;
+    width: 400px;
+
+}
+
+#form{
+    border-bottom: 1px solid #000;
+    height: 250px;
+
+}
